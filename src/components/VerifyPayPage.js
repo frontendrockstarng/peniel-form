@@ -55,6 +55,12 @@ const VerifyPayPage = ({ userData, setUserData }) => {
       return;
     }
 
+    // Check if userData and userData.id exist
+    if (!userData || !userData.id) {
+      console.error("userData or userData.id is undefined");
+      return;
+    }
+
     // Upload the file to Firebase Storage
     const storage = getStorage(firebaseApp);
     const storageRef = ref(storage, 'payments/' + file.name);

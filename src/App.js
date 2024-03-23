@@ -45,7 +45,11 @@ const App = () => {
             path="/paymentstatus"
             element={<PaymentStatusPage userData={userData} setUserData={setUserData} />}
           />
-           <Route path="/verifypay" element={<VerifyPayPage />} />
+           <Route
+           path="/verifypay"
+          element={<VerifyPayPage userData={userData} setUserData={setUserData} />}
+          />
+
             <Route path="/paymentdetails" element={<PaymentDetailsPage />} />
             <Route path="/paynow" element={<PayNowPage />} />
             <Route path="/thankyou" element={<ThankYouPage />} />
