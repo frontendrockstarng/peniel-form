@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    color: rgb(218, 218, 218);
+}
+p{
+    color: #f9f9f9;
+}
+.formDiv{
+    margin-top: 0;
+    width: 80%;
+    height: 100vh;
+    padding: 0 10%;
+    background: #000000;
+}
+
+#welcomePageDiv,#thankYouPage,#paymentDetailsPageDiv,#payNowYouPage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/Peniel\ bg\ 1\ -\ welcome\ page.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#welcomePageDiv h1{
+    text-align: center;
+    width: 50%;
+    font-size:4.5rem;
+    letter-spacing: -2px;
+    line-height: 100%;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+
+#welcomePageDiv p{
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+#welcomeBtn{
+   background:none;
+   border: none;
+   font-size: 1.5rem;
+}
+
+#welcomeBtnLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #f9f9f9;
+    border: none;
+    padding: 1.5% 2.5%;
+    border-radius: 60px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+#welcomeBtnLink:hover{
+    transition: all ease-in-out 200ms;
+    padding: 1.4% 2.4%;
+}
+
+#welcomeBtnLink:hover #welcomeBtn{
+    transition: all ease-in-out 200ms;
+    color: #281871;
+}
+
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .fade-up-h1 {
+    animation: fadeUp 1s ease forwards;
+  }
+  
+  .fade-up-p {
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.2s; /* Delay the animation by 0.2 seconds */
+  }
+  
+  .fade-up-button {
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.4s; /* Delay the animation by 0.4 seconds */
+  }
+
+  /* namepage css */
+
+  #namePageDiv,#emailPageDiv,#phoneNumberPageDiv,#homeAddressPageDiv,#denominationPageDiv,#paymentStatusPageDiv,#verifyPayPageDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/Peniel\ bg\ 2\ -\ Name\ page.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .formHeading h1{
+    width: 50%;
+    font-size:2.2rem;
+    letter-spacing: 0px;
+    line-height: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+    color: #cdcdcd;
+}
+
+.pageBtnDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    align-items: center;
+}
+
+form{
+    width: 50%;
+}
+
+.normalInput{
+    width: 100%;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    outline-style: none;
+    color: #f9f9f9;
+}
+
+.pageBtnDiv a{
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.pageBtnDiv button{
+    background-color: #f9f9f9;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1.8% 4.1%;
+    border-radius: 60px;
+}
+
+.pageBtnDiv button:hover{
+    transition: all ease-in 200ms;
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.pageBtnDiv a:hover{
+    transition: color ease-in 100ms;
+    color: #959595;
+}
+
+.error{
+    margin-top: 2%;
+    font-size: 0.9rem;
+    color: #c04f4f;
+}
+
+/* emailpage css */
+
+#emailPageDiv{
+    background-image: url('./images/Peniel\ bg\ 3\ -\ Email\ page.png');
+}
+
+/* phonenumberpage css */
+
+#phoneNumberPageDiv{
+    background-image: url('./images/Peniel\ bg\ 4\ -\ Phone\ number\ page.png');
+}
+
+/* homeaddresspage */
+
+#homeAddressPageDiv{
+    background-image: url('./images/Peniel\ bg\ 5\ -\ home\ address\ page.png');
+}
+
+/* denominationpage css */
+
+#denominationPageDiv{
+    background-image: url('./images/Peniel\ bg\ 6\ -\ denomination\ page.png');
+}
+
+/* paymentstatuspage css */
+
+#paymentStatusPageDiv{
+    background-image: url('./images/Peniel\ bg\ 7\ -\ payment\ status\ page.png');
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+  .radioInput{
+    margin-bottom: 2%;
+  }
+
+  .radioText{
+    margin-left: 2%;
+    color: #f9f9f9;
+  }
+
+  #file-name{
+    background-color: #f9f9f9;
+   border: 1px #d3d3d3 solid;
+   border-radius: 10px;
+   color: #d3d3d3;
+  }
+
+  /* thank you page */
+
+  #thankYouPage{
+    background-image: url('./images/Peniel\ bg\ 8\ -\ thankyoupage.png');
+}
+
+#thankYouPage h1{
+    margin-bottom: 0;
+}
+
+#thankYouPage p{
+    text-align: center;
+    width: 50%;
+    font-size: 1.4rem;
+    margin-top: 2%;
+    color: #e1e1e1;
+}
+
+/* pyment details page */
+
+#paymentDetailsPageDiv{
+    background-image: url('./images/Peniel\ bg\ 9\ -\ payment\ details\ page.png');
+}
+
+#paymentDetailsPageDiv p, #payNowYouPage p{
+    margin-bottom: 0;
+}
+
+/* paynowpage css */
+
+#payNowYouPage{
+    background-image: url('./images/Peniel\ bg\ 10\ -\ pay\ now\ page.png')!important;
+}
+
+#payNowBtnDiv{
+    width: 40%;
+}
