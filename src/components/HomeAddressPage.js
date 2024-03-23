@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { CircularProgress } from '@mui/material'; // Import CircularProgress
 import firebaseApp from '../firebase';
 import { getFirestore, doc, updateDoc } from 'firebase/firestore';
 
@@ -9,6 +10,7 @@ const HomeAddressPage = ({ userData, setUserData }) => {
   const [error, setError] = useState('');
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(false); // Add this line
   const text = "We won't call you at odd hours. Enter Your Home Address";
   const typingSpeed = 10; // milliseconds
 
@@ -34,6 +36,8 @@ const HomeAddressPage = ({ userData, setUserData }) => {
       return;
     }
 
+    setIsLoading(true); // Set loading to true when the form is submitted
+
     // Update the home address in Firebase
     const db = getFirestore(firebaseApp);
     const userDoc = doc(db, "users", userData.id);
@@ -44,6 +48,7 @@ const HomeAddressPage = ({ userData, setUserData }) => {
       console.error("Error updating document: ", error);
     }
 
+    setIsLoading(false); // Set loading to false after the home address is updated
     setUserData({ ...userData, homeAddress });
     navigate('/denomination');
   };
@@ -62,7 +67,9 @@ const HomeAddressPage = ({ userData, setUserData }) => {
         {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
         <div className="pageBtnDiv">
           <Link to="/phonenumber">Previous</Link>
-          <button type="submit">Next</button>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? <CircularProgress size={24} /> : 'Next'} {/* Show CircularProgress when isLoading is true */}
+          </button>
         </div>
       </form>
     </div>

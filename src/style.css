@@ -52,6 +52,7 @@ p{
 }
 
 #welcomeBtn{
+    cursor: pointer;
    background:none;
    border: none;
    font-size: 1.5rem;
@@ -168,6 +169,11 @@ form{
     transition: all ease-in 200ms;
     background-color: #d3d3d3;
     cursor: pointer;
+}#verifyPageUpload button{
+    font-size: 1rem;
+    padding: 1.2% 4.1%;
+    border-radius: 60px;
+    color: #131313;
 }
 
 .pageBtnDiv a:hover{
@@ -232,6 +238,7 @@ input[type="radio"] {
    border: 1px #d3d3d3 solid;
    border-radius: 10px;
    color: #d3d3d3;
+   margin-top: 0%;
   }
 
   /* thank you page */
@@ -271,3 +278,4 @@ input[type="radio"] {
 #payNowBtnDiv{
     width: 40%;
 }
+
