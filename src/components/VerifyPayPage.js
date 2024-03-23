@@ -67,24 +67,23 @@ const VerifyPayPage = ({ userData, setUserData }) => {
       (error) => {
         console.error("Error uploading file: ", error);
       }, 
-      () => {
+      async () => {
         // Handle successful upload
-        getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+        try {
+          const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
           console.log('File available at', downloadURL);
 
           // Update the payment proof in Firebase
           const db = getFirestore(firebaseApp);
           const userDoc = doc(db, "users", userData.id);
-          try {
-            await updateDoc(userDoc, { paymentProof: downloadURL });
-            console.log("Document updated with payment proof: ", downloadURL);
-          } catch (error) {
-            console.error("Error updating document: ", error);
-          }
+          await updateDoc(userDoc, { paymentProof: downloadURL });
+          console.log("Document updated with payment proof: ", downloadURL);
 
           setUserData({ ...userData, paymentProof: downloadURL });
           navigate('/thankyou');
-        });
+        } catch (error) {
+          console.error("Error updating document: ", error);
+        }
       }
     );
   };
