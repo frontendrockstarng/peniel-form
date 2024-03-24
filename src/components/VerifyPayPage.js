@@ -38,7 +38,7 @@ const VerifyPayPage = ({ userData, setUserData }) => {
     if (selectedFile) {
       if (selectedFile.size > 2 * 1024 * 1024) {
         setError('File size should not exceed 2MB');
-      } else if (!['image/png', 'application/pdf'].includes(selectedFile.type)) {
+      } else if (!['image/png', 'application/pdf', 'image/jpg'].includes(selectedFile.type)) {
         setError('Invalid file format. Only PNG and PDF files are allowed');
       } else {
         setFile(selectedFile);
