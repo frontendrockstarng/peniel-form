@@ -122,7 +122,7 @@ const VerifyPayPage = ({ userData, setUserData }) => {
         {error && <Typography style={{ color: 'red', fontSize: '12px' }}>{error}</Typography>}
         <div className="pageBtnDiv">
           <Link to="/paymentstatus">Previous</Link>
-          <button type="submit">Next</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
     </div>
