@@ -14,7 +14,7 @@ const PayNowPage = () => {
       <h1>Make Payment Now</h1>
       <p>Please make payment to the following bank details:</p>
       <p>Bank name: Wema Bank</p>
-      <p>Account number: 100910119</p>
+      <p>Account number: 0268786368</p>
       <p>Account name: Blessing Aniefiok</p>
       <div className="pageBtnDiv" id="payNowBtnDiv">
           <Link to="/paymentstatus">Back</Link>
