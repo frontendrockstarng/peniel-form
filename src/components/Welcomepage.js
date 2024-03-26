@@ -28,7 +28,7 @@ const WelcomePage = () => {
   return (
     <div className="formDiv"id="welcomePageDiv">
       <h1 className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Welcome to PENIEL 6.0</h1>
-      <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>Gear up for divine fun! Just a form away from securing your spot at Camp PENIEL.</p>
+      <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>Gear up for divine impartation! Just a form away from securing your spot at PENIEL.</p>
       <Link to="/name" id="welcomeBtnLink" className={`fade-up-button ${loaded ? 'fade-up' : ''}`}>
         <button id="welcomeBtn" onClick={handleStartRegistration} disabled={isLoading}>
           {isLoading ? <CircularProgress size={24} /> : 'Start registration'} {/* Show CircularProgress when isLoading is true */}
