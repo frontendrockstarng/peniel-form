@@ -12,6 +12,7 @@ import VerifyPayPage from './components/VerifyPayPage';
 import PaymentDetailsPage from './components/PaymentDetailsPage';
 import PayNowPage from './components/PayNowPage'; 
 import ThankYouPage from './components/ThankYouPage';
+import SowSeedPage from './components/SowSeedPage';
 
 const App = () => {
   const [userData, setUserData] = useState({});
@@ -52,7 +53,9 @@ const App = () => {
 
             <Route path="/paymentdetails" element={<PaymentDetailsPage />} />
             <Route path="/paynow" element={<PayNowPage />} />
-            <Route path="/thankyou" element={<ThankYouPage />} />
+            <Route path="/thankyou" element={<ThankYouPage />} /> 
+            <Route path="/sowseed" element={<SowSeedPage />} /> 
+            {/* SowSeedPage */}
           {/* Add routes for other pages */}
         </Routes>
       </div>

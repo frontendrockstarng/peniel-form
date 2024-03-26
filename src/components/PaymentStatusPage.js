@@ -56,6 +56,10 @@ const PaymentStatusPage = ({ userData, setUserData }) => {
       navigate('/paymentdetails');
     } else if (paymentStatus === 'pay_now') {
       navigate('/paynow');
+    }else if (paymentStatus === 'not_camping'){
+      navigate('/thankyou')
+    }else if(paymentStatus === 'not_camping_but_sowing'){
+      navigate('/sowseed');
     }
   };
 
@@ -97,6 +101,30 @@ const PaymentStatusPage = ({ userData, setUserData }) => {
               onChange={handleChange}
             />
             <span className="radioText">I want to pay now</span> 
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              className="radioInput"
+              type="radio"
+              value="not_camping"
+              checked={paymentStatus === 'not_camping'}
+              onChange={handleChange}
+            />
+            <span className="radioText"> No, I am not camping</span> 
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              className="radioInput"
+              type="radio"
+              value="not_camping_but_sowing"
+              checked={paymentStatus === 'not_camping_but_sowing'}
+              onChange={handleChange}
+            />
+            <span className="radioText"> I am not camping but I want to sow</span> 
           </label>
         </div>
         {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
