@@ -11,7 +11,7 @@ const HomeAddressPage = ({ userData, setUserData }) => {
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false); // Add this line
-  const text = "We won't call you at odd hours. Enter Your Home Address";
+  const text = "Location Details - Share Your Full Address";
   const typingSpeed = 10; // milliseconds
 
   useEffect(() => {

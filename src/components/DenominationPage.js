@@ -11,7 +11,7 @@ const DenominationPage = ({ userData, setUserData }) => {
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false); // Add this line
-  const text = "Now we know where you live. What church do you attend?";
+  const text = "We love to know your faith community. What church do you attend?";
   const typingSpeed = 10; // milliseconds
 
   useEffect(() => {

@@ -15,8 +15,8 @@ const ThankYouPage = () => {
   }, []);
   return (
     <div className="formDiv"id="thankYouPage">
-      <h1 className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Thank You for Registering!</h1>
-      <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>You will receive an email to acknowledge your registration.</p>
+      <h1 className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Registration Complete!</h1>
+      <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>See You at Peniel 6.0!!.</p>
       {/* <Link to="/">Home</Link> */}
     </div>
   );

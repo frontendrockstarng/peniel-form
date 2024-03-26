@@ -12,7 +12,7 @@ const EmailPage = ({ userData, setUserData }) => {
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false); // Add this line
-  const text = `Welcome aboard, ${userData.name}! Next, I'll need your email address. We wouldn't want you to miss any heavenly updates!`;
+  const text = `Welcome aboard, ${userData.name}! Next,  Provide your email address to stay updated.`;
   const typingSpeed = 10; // milliseconds
 
   // Function to simulate typing effect

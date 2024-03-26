@@ -41,7 +41,7 @@ const Namepage = ({ userData, setUserData }) => {
 
   return (
     <div className="formDiv formHeading" id="namePageDiv">
-      <h1>Fantastic! Let's get you registered for Camp PENIEL. What's your full name?</h1>
+      <h1>Let's get you registered for PENIEL 6.0. Enter your full name for a Personalised Experience</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
