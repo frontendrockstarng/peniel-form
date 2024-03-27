@@ -20,6 +20,10 @@ const SowSeedPage = () => {
       <p>Bank name: Wema Bank</p>
       <p>Account number: 0268786368</p>
       <p>Account name: Blessing Aniefiok</p>
+      <div className='moreDetailsDiv'>
+        <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>For further enquires</small>
+        <a href='https://api.whatsapp.com/send?phone=2348028370487&text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Peniel' className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Reach out via whatsapp</a> <br />
+      </div>
       {/* <Link to="/">Home</Link> */}
     </div>
   );

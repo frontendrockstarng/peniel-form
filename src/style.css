@@ -281,6 +281,24 @@ input[type="radio"] {
     width: 40%;
 }
 
+.moreDetailsDiv{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.moreDetailsDiv small{
+    font-size: 1rem;
+    color: #e1e1e1;
+}
+.moreDetailsDiv a{
+    color: #f9f9f9;
+    font-size: 1rem;
+}
+
 /* media queries */
 
 @media screen and (min-width: 310px) and (max-width: 899px){
@@ -311,10 +329,10 @@ html{
     
     #welcomePageDiv p{
         width: 90%;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-top: 2%;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
         line-height: 1.7rem;
     }
     
@@ -433,5 +451,27 @@ html{
         margin-top: 2%;
         color: #e1e1e1;
     }
-    
+
+    .moreDetailsDiv{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .moreDetailsDiv small, .moreDetailsDiv a{
+        font-size: 0.85rem;
+        color: #e1e1e1;
+        margin-bottom: 0;
+    }
+
+    .moreDetailsDiv a{
+        margin-top: 3%;
+    }
+
+    #paymentDetailsPageDiv h1, #paymentDetailsPageDiv p{
+        text-align: center;
+    }
 }
