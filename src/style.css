@@ -219,6 +219,18 @@ form{
     background-image: url('./images/Peniel\ bg\ 7\ -\ payment\ status\ page.png');
 }
 
+/* verifypaypage */
+
+#verifyPayPageDiv{
+    background: url('./images/docem-bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 input[type="radio"] {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
@@ -298,6 +310,7 @@ input[type="radio"] {
     color: #f9f9f9;
     font-size: 1rem;
 }
+
 
 /* media queries */
 
