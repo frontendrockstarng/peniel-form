@@ -215,9 +215,17 @@ form{
 
 /* paymentstatuspage css */
 
+/* #paymentDetailsPageDiv{
+    background: url('./images/docem-bg-2.png')!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+} */
+
 #paymentStatusPageDiv{
     background-image: url('./images/Peniel\ bg\ 7\ -\ payment\ status\ page.png');
 }
+
 
 /* verifypaypage */
 
