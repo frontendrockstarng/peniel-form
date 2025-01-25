@@ -16,15 +16,8 @@ const firebaseConfig = {
   measurementId: "G-QYN9WDP9JQ"
 };
 
-// Initialize Firebase
-try {
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  const db = getFirestore(app);
-  const auth = getAuth(app);
+const firebaseApp = initializeApp(firebaseConfig);
 
-  // Export the initialized app
-  export { app, analytics, db, auth };
-} catch (error) {
-  console.error("Firebase initialization error:", 
+export default firebaseApp;
+  
 
