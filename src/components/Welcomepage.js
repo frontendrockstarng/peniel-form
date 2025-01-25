@@ -27,7 +27,7 @@ const WelcomePage = () => {
 
   return (
     <div className="formDiv"id="welcomePageDiv">
-      <h1 className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Welcome to PENIEL 6.0</h1>
+      <h1 className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Welcome to PENIEL 7.0</h1>
       <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>Gear up for divine impartation! Just a form away from securing your spot at PENIEL.</p>
       <div className='moreDetailsDiv'>
         <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Location - Redemption Camp</small> <br />
