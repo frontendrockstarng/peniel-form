@@ -31,7 +31,7 @@ const WelcomePage = () => {
       <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>Gear up for divine impartation! Just a form away from securing your spot at PENIEL.</p>
       <div className='moreDetailsDiv'>
         <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Location - Redemption Camp</small> <br />
-        <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Duration - June 14, 2024 - June 17, 2024</small>
+        <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Duration - March 29, 2025 - April 1, 2025</small>
       </div>
       <Link to="/name" id="welcomeBtnLink" className={`fade-up-button ${loaded ? 'fade-up' : ''}`}>
         <button id="welcomeBtn" onClick={handleStartRegistration} disabled={isLoading}>
