@@ -210,7 +210,7 @@ form{
 /* denominationpage css */
 
 #denominationPageDiv{
-    background-image: url('./images/Peniel\ bg\ 6\ -\ denomination\ page.png');
+    background-image: url('https://res.cloudinary.com/colt-copy/image/upload/v1738589177/Peniel_bg_8_-_thankyoupage_vac0ul.png');
 }
 
 /* paymentstatuspage css */
@@ -266,7 +266,7 @@ input[type="radio"] {
   /* thank you page */
 
   #thankYouPage{
-    background-image: url('./images/Peniel\ bg\ 8\ -\ thankyoupage.png');
+    background-image: url('https://res.cloudinary.com/colt-copy/image/upload/v1738589208/Peniel_bg_6_-_denomination_page_new_hjjpl9.png');
 }
 
 #thankYouPage h1{
