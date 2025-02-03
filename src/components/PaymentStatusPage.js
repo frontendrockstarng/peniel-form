@@ -11,7 +11,7 @@ const PaymentStatusPage = ({ userData, setUserData }) => {
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false); // Add this line
-  const text = "Secure your spot. Confirm you've paid the N15,000 camp fee.";
+  const text = "Secure your spot. Confirm you've paid the N20,000 camp fee.";
   const typingSpeed = 10; // milliseconds
 
   useEffect(() => {
