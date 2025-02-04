@@ -22,7 +22,7 @@ const PaymentDetailsPage = () => {
       <p>Account name: Blessing Aniefiok</p>
       <div className='moreDetailsDiv'>
         <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>To confirm your payment</small>
-        <a href='https://api.whatsapp.com/send?phone=2348028370487&text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Peniel' className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Reach out via whatsapp</a> <br />
+        <a href='https://wa.me/2347059645041' className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Reach out via whatsapp</a> <br />
       </div>
       {/* <Link to="/">Home</Link> */}
     </div>
