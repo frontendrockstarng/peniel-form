@@ -51,7 +51,7 @@ const PaymentStatusPage = ({ userData, setUserData }) => {
     setIsLoading(false); // Set loading to false after the payment status is updated
     setUserData({ ...userData, paymentStatus });
     if (paymentStatus === 'paid') {
-      navigate('/verifypay');
+      navigate('/thankyou');
     } else if (paymentStatus === 'pay_later') {
       navigate('/paymentdetails');
     } else if (paymentStatus === 'pay_now') {
