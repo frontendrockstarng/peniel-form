@@ -6,7 +6,7 @@ const PayNowPage = () => {
   const navigate = useNavigate();
 
   const handlePaymentMade = () => {
-    navigate('/verifypay'); // Navigate to the VerifyPayPage
+    navigate('/thankyou'); // Navigate to the VerifyPayPage
   };
 
   return (
