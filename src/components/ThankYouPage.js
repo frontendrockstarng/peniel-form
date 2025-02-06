@@ -16,7 +16,7 @@ const ThankYouPage = () => {
   return (
     <div className="formDiv"id="thankYouPage">
       <h1 className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Registration Complete!</h1>
-      <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>See You at Peniel 6.0!!.</p>
+      <p className={`fade-up-p ${loaded ? 'fade-up' : ''}`}>See You at Peniel 7.0!!.</p>
       <div className='moreDetailsDiv'>
         <small className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>For further enquires</small>
         <a href='https://wa.me/2347059645041' className={`fade-up-h1 ${loaded ? 'fade-up' : ''}`}>Reach out via whatsapp</a> <br />
