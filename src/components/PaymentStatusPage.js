@@ -56,8 +56,8 @@ const PaymentStatusPage = ({ userData, setUserData }) => {
       navigate('/paymentdetails');
     } else if (paymentStatus === 'pay_now') {
       navigate('/paynow');
-    // }else if (paymentStatus === 'not_camping'){
-    //   navigate('/thankyou')
+     }else if (paymentStatus === 'part_payment'){
+      navigate('/thankyou')
     }else if(paymentStatus === 'not_camping_but_sowing'){
       navigate('/sowseed');
     }
@@ -103,18 +103,18 @@ const PaymentStatusPage = ({ userData, setUserData }) => {
             <span className="radioText">I want to pay now</span> 
           </label>
         </div>
-        {/* <div>
+        { <div>
           <label>
             <input
               className="radioInput"
               type="radio"
-              value="not_camping"
-              checked={paymentStatus === 'not_camping'}
+              value="I have paid part"
+              checked={paymentStatus === 'part_payment'}
               onChange={handleChange}
             />
             <span className="radioText"> No, I am not camping</span> 
           </label>
-        </div> */}
+        </div> }
         <div>
           <label>
             <input
