@@ -41,7 +41,7 @@ const Namepage = ({ userData, setUserData }) => {
 
   return (
     <div className="formDiv formHeading" id="namePageDiv">
-      <h1>Let's get you registered for PENIEL 7.0. Enter your full name for a Personalised Experience</h1>
+      <h1>Let's get you registered for PENIEL 8.0. Enter your full name for a Personalised Experience</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
